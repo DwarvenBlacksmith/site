@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Quick and Brief Homelab Overview"
 date: 2026-09-16
 ---
