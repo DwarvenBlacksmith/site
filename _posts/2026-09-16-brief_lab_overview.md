@@ -70,7 +70,7 @@ Here's a rough overview of how I have my lab setup:
         - Typical network traffic is denied, only the Tailscale interface allows access.
     - Managed via Ansible playbooks, which prevents some config drift
 
-I'm likely missing some stuff, so I'm gonna ramble. My goal is to attempt to minimize the blast radius of a compromise of any given device. Gateway device popped? Nothing else responds to traffic that would remediate it. Compromised endpoint? Can't get to the Gateway without a physically off jump box that is only on when I need it on. Compromised the lab? Tailscale ACLs say no to devices that shouldn't be talked to.
+I'm likely missing some stuff, so I'm gonna ramble. My goal is to attempt to minimize the blast radius of a compromise of any given device. Gateway device popped? Nothing that would remediate the compromised gateway can be reached. Compromised endpoint? Can't get to the Gateway without a physically off jump box that is only on when I need it on. Compromised the lab? Tailscale ACLs say no to devices that shouldn't be talked to.
 
 Layering broader VLANs and firewalls with an authenticated only overlay network makes a pretty sufficient way to deal with this. Since auth can be easily tied to hardware keys, it makes it quite a bit harder to hit those tunnels. If you get to one thing, it either isn't important, doesn't have internet access, or is going to get wiped. Some things in my network can just be reset and put back randomly anyways.
 
