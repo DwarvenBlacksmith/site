@@ -3,6 +3,7 @@ layout: post
 title: "Quick and Brief Homelab Overview"
 date: 2026-09-16
 ---
+# Quick and Brief Homelab Overview
 
 I get asked, or at least used to get asked, quite a bit on how I have my homelab setup. My lab has changed overtime quite a bit. I think the typical bell curve of homelabbing, start small, get real into it and get all the things, then tone it back down. I think the toned down part is generally the more interesting piece, at least to me. It was the point where I've distilled what was valuable to me and what was just extra; no need for blinkenlights.
 
