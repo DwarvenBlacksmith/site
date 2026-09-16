@@ -57,7 +57,7 @@ I think this is generally the reason why I get asked the question a lot. Some of
 Here's a rough overview of how I have my lab setup:
 
 - Gateway
-    - VLANS
+    - VLANs
     - Firewall
         - Firewall blocks all traffic between VLANs by default, and Tailscale is allowed between a couple.
         - Others are just blocked in general for things like IoT or devices that just don't need to be talking to one another.
